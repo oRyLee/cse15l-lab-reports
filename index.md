@@ -1,4 +1,4 @@
-TUTORIALS!
+Lab Report 1 Tutorial!
 
 How to Log into Course-Specific Account:
 
