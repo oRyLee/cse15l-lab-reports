@@ -16,6 +16,8 @@ Step 2: Remotely Connecting
 - type in, "ssh" + your course-specific username + "@ieng6.ucsd.edu"
 - a prompt for account conditions may pop up, if it does click allow
 - once everything is done you should be connected and met with a terminal that looks similar to the terminal in the image below 
+
+
 -<img width="447" alt="Screenshot 2023-04-10 at 9 28 33 PM" src="https://user-images.githubusercontent.com/130015533/231056796-025736fa-41d6-4504-af3d-3cd6d941cd82.png">
 
 
@@ -25,5 +27,7 @@ Step 3: Testing out Commands
 - an example of a command would be, "cp ~"
 - you can use commands such as the one above in the terminal 
 - there's an example of a command used in a terminal down below!
+
+
 - <img width="624" alt="Screenshot 2023-04-10 at 9 29 14 PM" src="https://user-images.githubusercontent.com/130015533/231056818-fb5a0e44-f9c0-41d5-b3d8-e85e9b34c779.png">
 
