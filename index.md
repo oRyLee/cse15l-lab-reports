@@ -8,6 +8,10 @@ Step 1: Searching for Course Specific Account on the UCSD site
 - ![Image 4-10-23 at 8 05 PM](https://user-images.githubusercontent.com/130015533/231056734-493a5136-8c5a-4905-af7f-3e8cc41a61b5.jpg)
 - after inputting your username and ID you will get your course specific username
 
+
+
+
+
 Step 2: Remotely Connecting 
 - open the program VScode (shown below) (if not already installed here is the link to do so --> https://code.visualstudio.com)
 - <img width="480" alt="Screenshot 2023-04-10 at 9 28 54 PM" src="https://user-images.githubusercontent.com/130015533/231056903-bf9854f3-d946-4014-bd00-d500e96e6994.png">
@@ -19,6 +23,10 @@ Step 2: Remotely Connecting
 
 
 -<img width="447" alt="Screenshot 2023-04-10 at 9 28 33 PM" src="https://user-images.githubusercontent.com/130015533/231056796-025736fa-41d6-4504-af3d-3cd6d941cd82.png">
+
+
+
+
 
 
 Step 3: Testing out Commands
