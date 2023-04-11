@@ -9,7 +9,7 @@ Step 1: Searching for Course Specific Account on the UCSD site
 - after inputting your username and ID you will get your course specific username
 
 Step 2: Remotely Connecting 
-- open the program VScode (shown below)
+- open the program VScode (shown below) (if not already installed here is the link to do so --> https://code.visualstudio.com)
 - <img width="480" alt="Screenshot 2023-04-10 at 9 28 54 PM" src="https://user-images.githubusercontent.com/130015533/231056903-bf9854f3-d946-4014-bd00-d500e96e6994.png">
 
 - open a new terminal in VScode (a shortcut to this is using command + "`")
