@@ -27,7 +27,6 @@ Step 2: Remotely Connecting
 
 
 
-
 Step 3: Testing out Commands
 - once you're all set up, you can try some commands!
 - some common commmands are 
