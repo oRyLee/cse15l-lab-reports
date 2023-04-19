@@ -24,6 +24,7 @@ Step 2: Remotely Connecting
 
 -<img width="447" alt="Screenshot 2023-04-10 at 9 28 33 PM" src="https://user-images.githubusercontent.com/130015533/231056796-025736fa-41d6-4504-af3d-3cd6d941cd82.png">
 
+    cd
 
 
 
@@ -31,7 +32,8 @@ Step 2: Remotely Connecting
 
 Step 3: Testing out Commands
 - once you're all set up, you can try some commands!
-- some common commmands are cd, ls, pwd, mkdir, and cp
+- some common commmands are 
+  cd,ls, pwd, mkdir, and cp
 - an example of a command would be, "cp ~"
 - you can use commands such as the one above in the terminal 
 - there's an example of a command used in a terminal down below!
