@@ -36,7 +36,7 @@ Step 3: Testing out Commands
 ```pwd``` - stands for "print working directory", and it'll display the current working directory   
 ```cp``` - stands for "class path", this causes java to search for class files
  
-- you can use commands such as the one above in the terminal 
+- you can use commands such as the one above in the terminal for different functions
 - there's an example of a command used in a terminal down below!
 
 
