@@ -30,12 +30,12 @@ Step 2: Remotely Connecting
 Step 3: Testing out Commands
 - once you're all set up, you can try some commands!
 - some common commmands are 
-``cd    
-`ls     
-`pwd     
+`cd    
+ls     
+pwd     
 mkdir     
 cp
-- an example of a command would be, "``cp ~"
+- an example of a command would be, `cp
 - you can use commands such as the one above in the terminal 
 - there's an example of a command used in a terminal down below!
 
