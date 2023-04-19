@@ -16,8 +16,8 @@ Step 2: Remotely Connecting
 - open the program VScode (shown below) (if not already installed here is the link to do so --> https://code.visualstudio.com)
 - <img width="480" alt="Screenshot 2023-04-10 at 9 28 54 PM" src="https://user-images.githubusercontent.com/130015533/231056903-bf9854f3-d946-4014-bd00-d500e96e6994.png">
 
-- open a new terminal in VScode (a shortcut to this is using command + "`")
-- type in, "ssh" + your course-specific username + "@ieng6.ucsd.edu"
+- open a new terminal in VScode (a shortcut to this is using command + ```"`"```)
+- type in, ```ssh``` + your course-specific username + ```@ieng6.ucsd.edu```
 - a prompt for account conditions may pop up, if it does click allow
 - once everything is done you should be connected and met with a terminal that looks similar to the terminal in the image below 
 
@@ -30,6 +30,7 @@ Step 2: Remotely Connecting
 Step 3: Testing out Commands
 - once you're all set up, you can try some commands!
 - some common commmands are 
+
 ```cd```    
 ```ls```     
 ```pwd```     
