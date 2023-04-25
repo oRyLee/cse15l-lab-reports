@@ -47,7 +47,7 @@ Step 3: Testing out Commands
  - <img width="600" alt="Image 4-24-23 at 6 30 PM" src="https://user-images.githubusercontent.com/130015533/234153679-bd863056-f171-4420-bc8d-ad8c4c99a8c2.jpg">
 
  ```ls -a```
-
+https://raw.githubusercontent.com/oRyLee/cse15l-lab-reports/75949a6cebc71312dd9c0f86fe4b76c3a1c992e2/Image%204-24-23%20at%207.03%20PM.jpg
  
  
  
