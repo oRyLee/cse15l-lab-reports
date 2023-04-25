@@ -46,7 +46,7 @@ Step 3: Testing out Commands
  ```pwd```
  - <img width="600" alt="Image 4-24-23 at 6 30 PM" src="https://user-images.githubusercontent.com/130015533/234153679-bd863056-f171-4420-bc8d-ad8c4c99a8c2.jpg">
 
- ```ls -a```!
+ ```ls -a```
 - <img width="600" alt="Image 4-24-23 at 7 03 PM" src="https://user-images.githubusercontent.com/130015533/234158132-725eac0b-0afe-4c60-9c32-762dadb18b28.jpg">
 
  
