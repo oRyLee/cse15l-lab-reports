@@ -42,6 +42,10 @@ Step 3: Testing out Commands
 
 - <img width="624" alt="Screenshot 2023-04-10 at 9 29 14 PM" src="https://user-images.githubusercontent.com/130015533/231056818-fb5a0e44-f9c0-41d5-b3d8-e85e9b34c779.png">
  
+ ![Image 4-24-23 at 6 26 PM](https://user-images.githubusercontent.com/130015533/234153617-f38c11e8-8856-4d94-9414-b0f5570022f1.jpg)
+
+ ![Image 4-24-23 at 6 30 PM](https://user-images.githubusercontent.com/130015533/234153679-bd863056-f171-4420-bc8d-ad8c4c99a8c2.jpg)
+
  
  
  
