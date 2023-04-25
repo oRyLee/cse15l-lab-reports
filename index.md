@@ -33,8 +33,26 @@ Step 3: Testing out Commands
 
 ```cd``` <path>  - stands for "change directory", and is used to change the current working directory to the given path 
  
---- 
-```ls```
+```ls``` <path> - stands for "list" and is used to list the folders and files within the given path   
+  
+```pwd``` - stands for "print working directory", and it'll display the current working directory 
+  
+```cp``` 
+ - stands for "class path", this causes java to search for class files
+
+ 
+- you can use commands such as the one above in the terminal for different functions
+- there's an example of a command used in a terminal down below!
+
+ ```ls - lat```
+- <img width="624" alt="Screenshot 2023-04-10 at 9 29 14 PM" src="https://user-images.githubusercontent.com/130015533/231056818-fb5a0e44-f9c0-41d5-b3d8-e85e9b34c779.png">
+ 
+ 
+ ```pwd```
+ - <img width="600" alt="Image 4-24-23 at 6 30 PM" src="https://user-images.githubusercontent.com/130015533/234153679-bd863056-f171-4420-bc8d-ad8c4c99a8c2.jpg">
+
+ ```ls -a```
+- <img width="600" alt="Image 4-24-23 at 7 03 PM" src="https://user-images.githubusercontent.com/130015533/234158132-725eac0b-0afe-4c60-9c32-762dadb18b28.jpg">
 
  
  
