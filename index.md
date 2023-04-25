@@ -26,15 +26,20 @@ Step 2: Remotely Connecting
 
 
 
-
 Step 3: Testing out Commands
 - once you're all set up, you can try some commands!
 - some common commmands are 
 
-```cd```<path>  - stands for "change directory", and is used to change the current working directory to the given path    
-```ls``` <path> - stands for "list" and is used to list the folders and files within the given path   
+
+```cd``` <path>  - stands for "change directory", and is used to change the current working directory to the given path 
+ 
+```
+ls
+```
+<path> - stands for "list" and is used to list the folders and files within the given path   
 ```pwd``` - stands for "print working directory", and it'll display the current working directory   
 ```cp``` - stands for "class path", this causes java to search for class files
+
  
 - you can use commands such as the one above in the terminal for different functions
 - there's an example of a command used in a terminal down below!
