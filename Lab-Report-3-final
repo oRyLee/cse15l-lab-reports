@@ -5,7 +5,6 @@ The command I chose to use is ```grep```!
 Alternative Command 1: ```grep -v```
 - it searches for lines that do not match a pattern
 
-~ Example 1: condense search of the word "PLANES" in the 911report directory
 
 
 
@@ -18,4 +17,11 @@ Alternative Command 3: ```grep -c```
 
 Alternative Command 4: ```grep -l```
 - you can search through more than 1 file with this command! it shows only the filenames that contain a pattern you give it
+
+- you can search through more than 1 file with this command! it shows only the filenames that contain a pattern you give it
+~ Example 1: a more specific search of the word "PLANES" in the 911report directory
+
+
+~ Example 2: a more broad search of the word "the" in the 911report directory
+
 
