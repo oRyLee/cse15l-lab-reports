@@ -2,10 +2,20 @@ LAB REPORT 3!
 
 The command I chose to use is ```grep```! 
 
-Alternative Command 1: ```ack```
+Alternative Command 1: ```grep -v```
+- it searches for lines that do not match a pattern
 
-Alternative Command 2: ```ag```
+~ Example 1: condense search of the word "PLANES" in the 911report directory
 
-Alternative Command 3: ```rg``` aka ripgrep
 
-Alternative Command 4: ```fgrep```
+
+
+Alternative Command 2: ```grep -n```
+- it shows the matching lines along with the line numbers
+
+Alternative Command 3: ```grep -c```
+-it counts the number of occurrences of a pattern
+
+Alternative Command 4: ```grep -l```
+- you can search through more than 1 file with this command! it shows only the filenames that contain a pattern you give it
+
