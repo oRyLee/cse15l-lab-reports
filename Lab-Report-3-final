@@ -20,8 +20,11 @@ Alternative Command 4: ```grep -l```
 
 - you can search through more than 1 file with this command! it shows only the filenames that contain a pattern you give it
 ~ Example 1: a more specific search of the word "PLANES" in the 911report directory
+![Image 5-24-23 at 11 06 PM]
 
 
 ~ Example 2: a more broad search of the word "the" in the 911report directory
+![Image 5-24-23 at 11 01 PM]
+
 
 
