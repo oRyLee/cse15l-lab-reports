@@ -44,7 +44,7 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 
 -to edit ListExamples.java go into the terminal and type in ```vim ListExamples.java```
 
--once the file is in the terminal it should look like the image below 
+-now the terminal should look like the image below with the entirety of the ListExamples.java file
 
 <img width="350" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/e6375a41-919f-4e48-afff-b667c36cd17b">
 
@@ -61,13 +61,6 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 <img width="673" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/bd37cba3-9bf7-4760-8bc3-ab557f8b9f47">
 
 
--after typing that in the terminal should look like with the entirety of the ListExamples.java file
-
--after looking through the code, line 44 is where the error was because the index1 should've been an index2
-
--after fixing the error the code should look like this 
-
-<img width="872" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/a5a75751-8e45-4799-b88f-2b18dcf0a92e">
 
 
 
