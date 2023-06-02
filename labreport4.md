@@ -73,8 +73,15 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 
 Step 8: Run the tests, demonstrating that they now succeed
 
--once again, type in ```bash test.sh``` into the terminal in order to run tests
+-once again, type in ```bash test.sh``` into the terminal in order to run tests and they should all be successful
 <img width="610" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4c28c7b6-a2ce-4de3-b460-ba892259987c">
+
+
+Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
+
+- type in ```git commit -a``` into the terminal 
+- now type in whatever committ message of your chosing (the screen should look like the one below)
+<img width="674" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/d6b3efc3-7e71-4dff-b4bc-523d21c40fc6">
 
 
 
