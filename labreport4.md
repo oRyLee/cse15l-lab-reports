@@ -78,7 +78,7 @@ Step 8: Run the tests, demonstrating that they now succeed
 Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
 
 - type in ```git commit -a``` into the terminal 
-- now type in whatever committ message of your chosing (the screen should look like the one below)
+- now type in whatever committ message of your choosing
 - after writing the message press ```esc``` to exit insert mode
 - then type ```:wq``` and you should be met with this screen
 <img width="788" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/9e4d97bd-db6f-4154-8ffd-5c7b6bdc026d">
