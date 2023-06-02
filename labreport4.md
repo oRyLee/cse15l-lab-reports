@@ -36,6 +36,9 @@ Step 6: Run the tests, demonstrating if they fail
 
 <img width="752" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/c02949ed-93d9-4447-8564-83bf38dfedf1">
 
+<img width="911" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/106155a7-47c7-432e-ae82-4b2f83345c5c">
+
+
 
 Step 7: Edit the code file ListExamples.java to fix the failing test 
 
@@ -46,6 +49,14 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 -after fixing the error the code should look like this 
 
 <img width="872" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/a5a75751-8e45-4799-b88f-2b18dcf0a92e">
+
+
+
+Step 8: Run the tests, demonstrating that they now succeed
+
+-once again, type in ```java ListExamplesTests.java``` into the terminal in order to run tests
+<img width="610" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4c28c7b6-a2ce-4de3-b460-ba892259987c">
+
 
 
 
