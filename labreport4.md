@@ -80,8 +80,8 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 - type in ```git commit -a``` into the terminal 
 - now type in whatever committ message of your choosing
 - after writing the message press ```esc``` to exit insert mode
-- then type ```:wq``` and you should be met with this screen
-<img width="788" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/9e4d97bd-db6f-4154-8ffd-5c7b6bdc026d">
+- then type ```:wq``` 
+- after that press enter and you should be met with this screen
 -<img width="657" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/fb582ee4-7949-4487-bae6-c747d0299874">
 
 -in order to git push, firstly make a token
