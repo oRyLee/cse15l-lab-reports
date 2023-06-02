@@ -44,6 +44,25 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 
 -now that it's evident there is a bug in the code, go to ListExamples.java to find the error
 
+-to edit ListExamples.java go into the terminal and type in ```vim ListExamples.java```
+
+-once you're in the file scroll down to the 44th line or press ```j``` 43 times (j is the command for scrolling down)
+
+-once on line 44 edit ```index1 += 1``` to ```index2 +=1``` by pressing ```x``` (delete command) to delete the ```1``` and press ```i``` (insert command) to insert a ```2``` in place of the ```1``` , after it should look like this
+
+<img width="350" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/e6375a41-919f-4e48-afff-b667c36cd17b">
+
+-once done editing type in ```:wq``` to quit vim and now you're done editing!
+
+
+<img width="685" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/5b809a65-3523-4903-82d3-fe2d17a83228">
+
+
+<img width="673" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/bd37cba3-9bf7-4760-8bc3-ab557f8b9f47">
+
+
+-after typing that in the terminal should look like with the entirety of the ListExamples.java file
+
 -after looking through the code, line 44 is where the error was because the index1 should've been an index2
 
 -after fixing the error the code should look like this 
