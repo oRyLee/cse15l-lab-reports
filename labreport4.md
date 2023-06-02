@@ -34,8 +34,6 @@ Step 6: Run the tests, demonstrating if they fail
 
 -after running the tests in the terminal the tests will have failed (as shown below)
 
-<img width="752" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/c02949ed-93d9-4447-8564-83bf38dfedf1">
-
 <img width="911" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/106155a7-47c7-432e-ae82-4b2f83345c5c">
 
 
