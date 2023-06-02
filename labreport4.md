@@ -44,11 +44,13 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 
 -to edit ListExamples.java go into the terminal and type in ```vim ListExamples.java```
 
+-once the file is in the terminal it should look like the image below 
+
+<img width="350" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/e6375a41-919f-4e48-afff-b667c36cd17b">
+
 -once you're in the file scroll down to the 44th line or press ```j``` 43 times (j is the command for scrolling down)
 
 -once on line 44 edit ```index1 += 1``` to ```index2 +=1``` by pressing ```x``` (delete command) to delete the ```1``` and press ```i``` (insert command) to insert a ```2``` in place of the ```1``` , after it should look like this
-
-<img width="350" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/e6375a41-919f-4e48-afff-b667c36cd17b">
 
 -once done editing type in ```:wq``` to quit vim and now you're done editing!
 
