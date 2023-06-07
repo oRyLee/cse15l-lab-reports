@@ -92,12 +92,6 @@ now that it's evident there is a bug in the code, go to ListExamples.java to fin
 -once done editing type in ```:wq``` to save the file and quit vim, now you're done editing!
 
 
-<img width="685" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/5b809a65-3523-4903-82d3-fe2d17a83228">
-
-
-<img width="673" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/bd37cba3-9bf7-4760-8bc3-ab557f8b9f47">
-
-
 
   
   
