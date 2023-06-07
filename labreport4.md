@@ -62,11 +62,18 @@ now that it's evident there is a bug in the code, go to ListExamples.java to fin
 
 -the press x to delete the "1"
 
+<img width="472" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/a0488e1d-0e4d-43b4-9bfe-471d783a0e4c">
+
+-type i which goes into insert mode
+
+-then type in 2 to make "index2" as shown in the image below
 
 
--once on line 44 edit ```index1 += 1``` to ```index2 +=1``` by pressing ```x``` (delete command) to delete the ```1``` and press ```i``` (insert command) to insert a ```2``` in place of the ```1``` , after it should look like this
+<img width="420" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/bb321343-ca2c-454f-bffd-af020d3c24e5">
 
--once done editing type in ```:wq``` to quit vim and now you're done editing!
+-after completing the change press the <esc> key to exit insert mode
+
+-once done editing type in ```:wq``` to save the file and quit vim, now you're done editing!
 
 
 <img width="685" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/5b809a65-3523-4903-82d3-fe2d17a83228">
@@ -77,10 +84,9 @@ now that it's evident there is a bug in the code, go to ListExamples.java to fin
 
 
 
-
 Step 8: Run the tests, demonstrating that they now succeed
 
--once again, type in ```bash test.sh``` into the terminal in order to run tests and they should all be successful
+-once again, type in ``````bash test.sh``` into the terminal in order to run tests and they should all be successful
 <img width="610" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4c28c7b6-a2ce-4de3-b460-ba892259987c">
 
 
