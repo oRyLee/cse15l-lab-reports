@@ -75,7 +75,7 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 - type in ```git commit -a``` into the terminal 
 - now type in whatever committ message of your choosing
 - after writing the message press ```esc``` to exit insert mode
-- then type ```:wq``` 
+- then type ```:wq``` to save the work
 - after that press enter and you should be met with this screen
 -<img width="657" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/fb582ee4-7949-4487-bae6-c747d0299874">
 
@@ -86,7 +86,7 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 
 -once you've made a token enter ```git push``` in the terminal
 
--enter your github username and for the password copy and paste the token you created
+-enter your github username, and as for the password copy and paste the token you created
 
 -once done the screen should look like this 
 
