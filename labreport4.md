@@ -86,7 +86,9 @@ now that it's evident there is a bug in the code, go to ListExamples.java to fin
 
 Step 8: Run the tests, demonstrating that they now succeed
 
--once again, type in ``````bash test.sh``` into the terminal in order to run tests and they should all be successful
+-once again, type in ```bash test.sh``` into the terminal in order to run tests and they should all be successful like in the image below
+  
+  
 <img width="610" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4c28c7b6-a2ce-4de3-b460-ba892259987c">
 
 
@@ -97,7 +99,16 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 - after writing the message press ```esc``` to exit insert mode
 - then type ```:wq``` to save the work
 - after that press enter and you should be met with this screen
+  
+  
 -<img width="657" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/fb582ee4-7949-4487-bae6-c747d0299874">
+  
+  
+ -then in the terminal type ```git add .``` to confirm changes in all files and ```git status``` will show you if the 
+  changes were made (it'll look like the photo below)
+  
+  <img width="402" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/bb086260-0f08-495e-999f-725c63d69538">
+  
 
 -in order to git push, firstly make a token (instructions on how to do so can be found here https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
