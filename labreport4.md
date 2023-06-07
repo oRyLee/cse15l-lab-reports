@@ -111,6 +111,8 @@ Step 8: Run the tests, demonstrating that they now succeed
 <img width="610" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4c28c7b6-a2ce-4de3-b460-ba892259987c">
 
 
+  
+  
 Step 9: Commit and push the resulting change to your Github account (you can pick any commit message!)
 
 - type in ```git commit -a``` into the terminal 
