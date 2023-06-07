@@ -22,9 +22,15 @@ Step 5: Clone your fork of the repository from your Github account
 
 <img width="1274" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/c7bddb09-283e-47ee-b057-6f885aa9c312">
 
--after pressing "Fork" you should be met with the screen shown below and after pressing the green "Fork" button the repository will be successfully forked!
+-after pressing "Fork" you should be met with the screen shown below and after pressing the green "Fork" button the repository
 
 <img width="1181" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/89221b6a-5280-441b-bb6a-ac6340fd0e23">
+
+-then in the terminal type in ```git clone``` and your specific fork link to finish forking! You should have something similar to the screen below 
+
+<img width="635" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/3e4f181b-4972-4f11-83fb-e1af14f5beda">
+
+
 
 
 Step 6: Run the tests, demonstrating if they fail
