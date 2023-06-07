@@ -81,6 +81,19 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 
 -in order to git push, firstly make a token
 
+<img width="869" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/b34f4e86-8c04-4da4-ae03-1e03807d506e">
+
+
+-once you've made a token enter ```git push``` in the terminal
+
+-enter your github username and for the password copy and paste the token you created
+
+-once done the screen should look like this 
+
+
+<img width="581" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/4d4e97cc-bd3d-4706-84b5-92095f623110">
+
+
 
 
 
