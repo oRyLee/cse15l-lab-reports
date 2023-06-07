@@ -35,6 +35,7 @@ Step 5: Clone your fork of the repository from your Github account
 
 Step 6: Run the tests, demonstrating if they fail
 
+- type in ```cd lab7``` to get into the lab7 directory
 
 -in the terminal type in ```bash test.sh``` in order to run the tests
 
@@ -46,7 +47,7 @@ Step 6: Run the tests, demonstrating if they fail
 
 Step 7: Edit the code file ListExamples.java to fix the failing test 
 
--now that it's evident there is a bug in the code, go to ListExamples.java to find the error
+now that it's evident there is a bug in the code, go to ListExamples.java to find the error!
 
 -to edit ListExamples.java go into the terminal and type in ```vim ListExamples.java```
 
@@ -54,7 +55,14 @@ Step 7: Edit the code file ListExamples.java to fix the failing test
 
 <img width="350" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/e6375a41-919f-4e48-afff-b667c36cd17b">
 
--once you're in the file scroll down to the 44th line or press ```j``` 43 times (j is the command for scrolling down)
+-once you're in the file scroll down to the 44th line or type ```j``` 43 times (j is the command for scrolling down)
+
+-highlight the "1" in "index1"
+<img width="343" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/fbd2aca8-50b9-47e4-a1a3-3b252e8df34d">
+
+-the press x to delete the "1"
+
+
 
 -once on line 44 edit ```index1 += 1``` to ```index2 +=1``` by pressing ```x``` (delete command) to delete the ```1``` and press ```i``` (insert command) to insert a ```2``` in place of the ```1``` , after it should look like this
 
