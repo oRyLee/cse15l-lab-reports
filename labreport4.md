@@ -15,6 +15,8 @@ Step 4: Log into ieng6
 
 
 
+
+
 Step 5: Clone your fork of the repository from your Github account
 
 -go to Github using the link https://github.com/ucsd-cse15l-s23/lab7
@@ -37,6 +39,7 @@ Step 5: Clone your fork of the repository from your Github account
 
 
 
+
 Step 6: Run the tests, demonstrating if they fail
 
 - type in ```cd lab7``` to get into the lab7 directory
@@ -47,6 +50,8 @@ Step 6: Run the tests, demonstrating if they fail
 
 
 <img width="911" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/106155a7-47c7-432e-ae82-4b2f83345c5c">
+
+
 
 
 
@@ -94,6 +99,9 @@ now that it's evident there is a bug in the code, go to ListExamples.java to fin
 
 
 
+  
+  
+ 
 
 Step 8: Run the tests, demonstrating that they now succeed
 
