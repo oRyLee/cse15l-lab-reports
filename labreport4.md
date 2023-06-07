@@ -79,7 +79,7 @@ Step 9: Commit and push the resulting change to your Github account (you can pic
 - after that press enter and you should be met with this screen
 -<img width="657" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/fb582ee4-7949-4487-bae6-c747d0299874">
 
--in order to git push, firstly make a token
+-in order to git push, firstly make a token (instructions on how to do so can be found here https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 
 <img width="869" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/b34f4e86-8c04-4da4-ae03-1e03807d506e">
 
