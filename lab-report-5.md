@@ -6,7 +6,7 @@ What environment are you using (computer, operating system, web browser, termina
 - I'm working on a MacBook Pro, my web browser is Chrome, and my terminal/editor is in VSCode
 
 Detail the symptom you're seeing. Be specific; include both what you're seeing and what you expected to see instead. Screenshots are great, copy-pasted terminal output is also great. Avoid saying “it doesn't work”.
-- The problem I'm running into is that the terminal is saying the file/class ListExamples can't be found. I expected the terminal to find the class and then the terminal would output that the tests I created in the TestListExamples.java file were successful and show that 1/1 of my tests passed. Below I copy and pasted my terminal output
+- The problem I'm running into is that the terminal is saying the file/class ListExamples can't be found. I expected the terminal to find the class and then the terminal would output that the tests I created in the TestListExamples.java file were successful and show that 4/4 of my tests passed. Below I copy and pasted my terminal output
 
 //output begins here
 
@@ -118,10 +118,13 @@ Detail the failure-inducing input and context. That might mean any or all of the
   
   
   
- TA Response: A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never successfully it would make sense as to why it doesn't show in your directory with the search commands you're using and why the tests are ultimately failing. I wouls suggest the command ``` bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected ``` which should hopefully clone ALL of the contents of student-submission (including listExamples.java) and run grade.sh on them and I believe the tests should then pass successfully.
+ TA Response: A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never imported successfully it would make sense as to why it doesn't show in your directory with the search commands you're using, and why the tests are ultimately failing. I would suggest the command that could re-import the files you're looking for. Once you do that, the command should hopefully clone ALL of the contents (including listExamples.java) and run grade.sh on them, after that I believe the tests should then pass successfully.
   
   
- Student Response After Trial: 
+ Student Response After Trial (step 3) : 
+  
+  Thank you! You're explanation made a lot of sense and I'm seeing the output I expected now. Below is what I see in my terminal after using a command to import my files, which was ``` bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` and now 4/4 of my tests pass successfully. Your explanation helped me further solidify that because ListExamples.java wasn;t among my files the file couldn't be cloned and utilized in the process of grading ```student-submission``` . I also now see ListExamples.java in my sidebar (which I inserted a screenshot of below) which is a sure sign that I fixed the bug.
+  
   
  // terminal output begins
 RyLees-MacBook-Pro: % bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
@@ -141,6 +144,112 @@ Time: 0.005
 OK (4 tests)
   
 //terminal output ends
+  
+ (picture of sidebar)
+  
+  
+ <img width="157" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/54ebb1e3-4e3a-472c-bdd7-129050565908">
+  
+ Information of My Setup (step 4):
+  
+  Here are all of my files that I was working with:
+  
+  //grade.sh code begins
+  
+  ```
+  CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
+
+rm -rf student-submission
+rm -rf grading-area
+
+mkdir grading-area
+
+git clone $1 student-submission
+echo 'Finished cloning'
+
+
+# Draw a picture/take notes on the directory structure that's set up after
+# getting to this point
+
+# Then, add here code to compile and run, and do any post-processing of the
+# tests
+if [[ -e student-submission/ListExamples.java ]] 
+    then echo "Submit correctly"
+
+fi
+
+# cp student-submission/* grading-area
+if [ $? -eq 0 ]
+    then echo "Files moved successfully to grading-area."
+
+fi
+
+cp student-submission/ListExamples.java ./
+
+javac -cp $CPATH *.java
+
+java -cp $CPATH org.junit.runner.JUnitCore TestListExamples 
+  
+  ```
+  //grade.sh code ends 
+  
+  
+  //ListExamples.java code begins
+  
+ ```
+  import java.util.ArrayList;
+import java.util.List;
+
+interface StringChecker { boolean checkString(String s); }
+
+class ListExamples {
+
+  // Returns a new list that has all the elements of the input list for which
+  // the StringChecker returns true, and not the elements that return false, in
+  // the same order they appeared in the input list;
+  static List<String> filter(List<String> list, StringChecker sc) {
+    List<String> result = new ArrayList<>();
+    for(String s: list) {
+      if(sc.checkString(s)) {
+        result.add(s);
+      }
+    }
+    return result;
+  }
+
+
+  // Takes two sorted list of strings (so "a" appears before "b" and so on),
+  // and return a new list that has all the strings in both list in sorted order.
+  static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+    return result;
+  }
+
+
+}
+ ```
+ //ListExamples.java code ends                              
+  
+
 
 
 
