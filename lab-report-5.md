@@ -91,17 +91,12 @@ git clone $1 student-submission
 echo 'Finished cloning'
 
 
-# Draw a picture/take notes on the directory structure that's set up after
-# getting to this point
-
-# Then, add here code to compile and run, and do any post-processing of the
-# tests
 if [[ -e student-submission/ListExamples.java ]] 
     then echo "Submit correctly"
 
 fi
 
-# cp student-submission/* grading-area
+// cp student-submission/* grading-area
 if [ $? -eq 0 ]
     then echo "Files moved successfully to grading-area."
 
