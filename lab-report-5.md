@@ -9,6 +9,7 @@ Detail the symptom you're seeing. Be specific; include both what you're seeing a
 - The problem I'm running into is that the terminal is saying the file/class ListExamples can't be found. I expected the terminal to find the class and then the terminal would output that the tests I created in the TestListExamples.java file were successful and show that 4/4 of my tests passed. Below I copy and pasted my terminal output
 
 //output begins here
+```
 
 RyLees-MacBook-Pro:list-examples-grader-1-main ryleedavis$ bash grade.sh
 fatal: repository 'student-submission' does not exist
@@ -72,12 +73,12 @@ Tests run: 1,  Failures: 1
 --------------
 | Score: 1/4 |
 --------------
-  
+```
  //ouput ends here 
   
  Below is currently what my grade.sh file looks like which is the one I'm running with ```bash grade.sh```
   
-  
+ ```
   //grade.sh code begins here
   
  CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -107,7 +108,7 @@ cp student-submission/ListExamples.java ./
 javac -cp $CPATH *.java
 
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples 
-  
+  ```
  //grade.sh code ends here
   
   
@@ -127,6 +128,7 @@ Detail the failure-inducing input and context. That might mean any or all of the
   
   
  // terminal output begins
+ ```
 RyLees-MacBook-Pro: % bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
 Cloning into 'student-submission'...
 remote: Enumerating objects: 3, done.
@@ -142,6 +144,7 @@ JUnit version 4.13.2
 Time: 0.005
 
 OK (4 tests)
+```
   
 //terminal output ends
   
@@ -149,12 +152,15 @@ OK (4 tests)
   
   
  <img width="157" alt="image" src="https://github.com/oRyLee/cse15l-lab-reports/assets/130015533/54ebb1e3-4e3a-472c-bdd7-129050565908">
+ 
+ 
   
- Information of My Setup (step 4):
+ Information Regarding the Setup (step 4):
+ 
+ The error was that the file ListExamples.java never found which caused errors to follow and tests to fail. ListExamples.java was not found because the file was never imported successfully. After running the code ``` bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected``` it allowed for the files (including Listexamples.java) to be imported and cloned successfully in order for the grade.sh to run successfully and for all 4/4 tests to pass successfully as well. An example of the correct file contents is down below, because in the end it wasn't and issue in the file contents but in the import and cloning process which caused the absence of a neccessary file. 
   
-  Here are all of my files that I was working with:
   
-  //grade.sh code begins
+  //Grade.sh code begins
   
   ```
   CPATH='.:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar'
@@ -191,7 +197,7 @@ javac -cp $CPATH *.java
 java -cp $CPATH org.junit.runner.JUnitCore TestListExamples 
   
   ```
-  //grade.sh code ends 
+  //Grade.sh code ends 
   
   
   //ListExamples.java code begins
@@ -247,19 +253,141 @@ class ListExamples {
 
 }
  ```
- //ListExamples.java code ends                              
-  
-
-
-
-
-
-  
+ //ListExamples.java code ends 
  
+ //GradeServer.java code begins 
+ ```
+ import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+class ExecHelpers {
+
+  /**
+    Takes an input stream, reads the full stream, and returns the result as a
+    string.
+
+    In Java 9 and later, new String(out.readAllBytes()) would be a better
+    option, but using Java 8 for compatibility with ieng6.
+  */
+  static String streamToString(InputStream out) throws IOException {
+    String result = "";
+    while(true) {
+      int c = out.read();
+      if(c == -1) { break; }
+      result += (char)c;
+      System.out.println(System.currentTimeMillis() + "; just read: " + (char)c);
+    }
+    return result;
+  }
+
+  /**
+    Takes a command, represented as an array of strings as it would by typed at
+    the command line, runs it, and returns its combined stdout and stderr as a
+    string.
+  */
+  static String exec(String[] cmd) throws IOException {
+    Process p = new ProcessBuilder()
+                    .command(Arrays.asList(cmd))
+                    .redirectErrorStream(true)
+                    .start();
+    InputStream out = p.getInputStream();
+    return String.format("%s\n", streamToString(out));
+  }
+
+}
+
+class Handler implements URLHandler {
+    public String handleRequest(URI url) throws IOException {
+       if (url.getPath().equals("/grade")) {
+           String[] parameters = url.getQuery().split("=");
+           if (parameters[0].equals("repo")) {
+               return ExecHelpers.exec(new String[]{"bash", "grade.sh", parameters[1]});
+           }
+           else {
+               return "Couldn't find query parameter repo";
+           }
+       }
+       else {
+           return "Don't know how to handle that path!";
+       }
+    }
+}
+
+class GradeServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+```
+//GradeServer.java code ends
+
+//TestListExamples.java code begins 
+```
+import static org.junit.Assert.*;
+import org.junit.*;
+import java.util.Arrays;
+import java.util.List;
+
+class IsMoon implements StringChecker {
+  public boolean checkString(String s) {
+    return s.equalsIgnoreCase("moon");
+  }
+}
+
+public class TestListExamples {
+  @Test(timeout = 500)
+  public void testMergeRightEnd() {
+    List<String> left = Arrays.asList("a", "b", "c");
+    List<String> right = Arrays.asList("a", "d");
+    List<String> merged = ListExamples.merge(left, right);
+    List<String> expected = Arrays.asList("a", "a", "b", "c", "d");
+    assertEquals(expected, merged);
+  }
+
+  @Test(timeout = 500)
+  public void testMergeLeftEnd() {
+    List<String> left = Arrays.asList("a", "b", "z");
+    List<String> right = Arrays.asList("a", "d");
+    List<String> merged = ListExamples.merge(left, right);
+    List<String> expected = Arrays.asList("a", "a", "b", "d", "z");
+    assertEquals(expected, merged);
+  }
+
+  @Test(timeout = 500)
+  public void testFilterSingle() {
+    List<String> input = Arrays.asList("Moon", "MOO", "moo");
+    List<String> expect = Arrays.asList("Moon");
+    List<String> filtered = ListExamples.filter(input, new IsMoon());
+    assertEquals(expect, filtered);
+  }
+
+  @Test(timeout = 500)
+  public void testFilterMulti() {
+    List<String> input = Arrays.asList("Moon", "MOO", "moon", "MOON");
+    List<String> expect = Arrays.asList("Moon", "moon", "MOON");
+    List<String> filtered = ListExamples.filter(input, new IsMoon());
+    assertEquals(expect, filtered);
+  }
+}
+```
+//TestListExamples.java code ends
+  
+
 
 
 
 Reflection:
 Something that I've taken away from my lab experience this quarter was how in depth debugging goes and how crucial it is when making programs. From all of the debugging scenarios in class to the ones made in lecture by accident, I've found that being able to break up code and criticially think about how and why a problem is occuring is an important yet difficult skill to learn. It's been cool to see different methods of debugging as well as different ways to check coe and crate tests (example: JUnit). Overall debugging is an interesting process that I was able to learn more about this quarter.
-
-
