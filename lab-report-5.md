@@ -118,7 +118,29 @@ Detail the failure-inducing input and context. That might mean any or all of the
   
   
   
- TA Response: A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never successfully it would make sense as to why it doesn't show in your directory with the search commands you're using and why the tests are ultimately failing. 
+ TA Response: A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never successfully it would make sense as to why it doesn't show in your directory with the search commands you're using and why the tests are ultimately failing. I wouls suggest the command ``` bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected ``` which should hopefully clone ALL of the contents of student-submission (including listExamples.java) and run grade.sh on them and I believe the tests should then pass successfully.
+  
+  
+ Student Response After Trial: 
+  
+ // terminal output begins
+RyLees-MacBook-Pro: % bash grade.sh https://github.com/ucsd-cse15l-f22/list-methods-corrected
+Cloning into 'student-submission'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+Finished cloning
+Submit correctly
+Files moved successfully to grading-area.
+JUnit version 4.13.2
+....
+Time: 0.005
+
+OK (4 tests)
+  
+//terminal output ends
 
 
 
