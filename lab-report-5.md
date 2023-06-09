@@ -1,6 +1,6 @@
 LAB REPORT 5!
 
-Ed-Stem Questions:
+Ed-Stem Questions (step 1):
 
 What environment are you using (computer, operating system, web browser, terminal/editor, and so on)?
 - I'm working on a MacBook Pro, my web browser is Chrome, and my terminal/editor is in VSCode
@@ -119,7 +119,7 @@ Detail the failure-inducing input and context. That might mean any or all of the
   
   
   
- TA Response: A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never imported successfully it would make sense as to why it doesn't show in your directory with the search commands you're using, and why the tests are ultimately failing. I would suggest the command that could re-import the files you're looking for. Once you do that, the command should hopefully clone ALL of the contents (including listExamples.java) and run grade.sh on them, after that I believe the tests should then pass successfully.
+ TA Response (step 2): A possible reason to why the file you're looking for, ListExamples.java, is because both of your commands ```cp student-submission/ListExamples.java ./``` and ```find ListExamples.java``` is an error in the cloning and or importing process. Meaning that there's a possibility the ListExamples.java file was never imported successfully to the files you're accessing. And if the file was never imported successfully it would make sense as to why it doesn't show in your directory with the search commands you're using, and why the tests are ultimately failing. I would suggest the command that could re-import the files you're looking for. Once you do that, the command should hopefully clone ALL of the contents (including listExamples.java) and run grade.sh on them, after that I believe the tests should then pass successfully.
   
   
  Student Response After Trial (step 3) : 
